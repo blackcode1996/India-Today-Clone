@@ -1,0 +1,191 @@
+#container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: 90px;
+    border: 0px solid red;
+}
+#container>ul{
+    margin-top: 0px;
+    margin-bottom: auto;
+    list-style: none;
+    padding: 0px 5px;
+    display: flex;
+    
+}
+#container>ul>li{
+    padding: 0px;
+    margin-left: 30px;
+    
+}
+#top ul li a{
+    font-size: 13px;
+    font-weight: 700;
+    color: #938e8e;
+    white-space: nowrap;
+    padding: 5px 0;
+    display: block;
+    line-height: 1.4;
+    text-decoration: none;
+}
+#hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    
+}
+#top-nav{
+    height: 90px;
+    width:100%;
+    border:0px solid gray;
+}
+#in-nav{
+    height: 90px;
+    width: 50%;
+    border: 0px solid green;
+    margin-left: 350px;
+    
+}
+#in-nav>ul{
+    display: flex;
+    margin-top: 30px;
+    list-style: none;
+}
+#in-nav>ul>li>a{
+    padding: 10px;
+    margin-left: 30px;
+    color: #575757;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    
+}
+#in-nav>ul>li>a:hover{
+    color: orange;
+    cursor: pointer;
+    
+}
+#changing>div:hover{
+    color: orange;
+    cursor: pointer;
+}
+#in-nav>ul>li>img{
+    margin-left: 50px;
+}
+#changing>div{
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-top: -3px;
+    color: #575757;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.blink {
+    animation: blink 0.5s steps(1, end) infinite;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 6px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    background-color: #d1242a
+
+}
+@keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+#bottamnav{
+    display:flex;
+    height: 35px;
+    width: 100%;
+    border: 1px solid red;
+    background-color: #d1242a
+
+}
+#bottamnav>div{
+    margin: auto;
+    color: bisque;
+}
+#bottamnav>div:hover{
+    color: orange;
+    cursor: pointer;
+}
+#ad>p{
+   text-align: center;
+}
+#ad>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ad>img:hover{
+    cursor: pointer;
+}
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+.container{
+    position: absolute;
+    background-color: gray;
+    min-width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+.dropdown:hover .container{
+    margin-top: -25px;
+    margin-left: -340px;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr);
+}
+.container>p{
+    margin-left: 10px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 12px;
+    
+}
+.container>p:hover{
+    color: orange;
+    padding: 5px;    
+}
+.dropdown1{
+    position:relative;
+    display:inline-block;
+}
+.container1{
+    position: absolute;
+    background-color: gray;
+    min-width: 100px;
+    height: 30px;
+    display: none;
+}
+.dropdown1:hover .container1{
+    display: flex;
+    margin-left: -30px;
+    margin-bottom: 100px;
+    background-color:gray;
+}
+.container1>i{
+    margin-left: 10px;
+    color: white;
+    align-content: center;
+    font-size: 22px;
+    
+}
+.container1>i:hover{
+    color: orange;
+    padding: 5px;
+     
+}
+
