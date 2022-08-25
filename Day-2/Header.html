@@ -7,6 +7,7 @@
     <title>Latest News, Breaking News Today - Bollywood, Cricket, Business, Politics - IndiaToday | IndiaToday</title>
     <link rel="shortcut icon" href="https://www.indiatoday.in/sites/all/themes/itg/favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="./Header.css"/>
+    <link rel="scriptsheet" href="./Header.js"/>
     <script 
         src="https://kit.fontawesome.com/24c494a6b6.js"
         crossorigin="anonymous
@@ -86,17 +87,44 @@
         <div onclick="location.href='https://www.indiatoday.in/sports/';" >SPORTS</div>
         <div onclick="location.href='https://www.indiatoday.in/science/';" >SCIENCE</div>
         <div onclick="location.href='https://www.indiatoday.in/best-universities/';" >BEST UNIVERSITIES</div>
-        <div>
-            <i class="fa-solid fa-bars"></i>  
-        </div>
+        <div class="dropdown">
+            <i class="fa-solid fa-bars" id="dropdownicon"></i>
+                <div class="container">
+                    <p onclick="location.href='https://www.indiatoday.in/health'">HEALTH</P>
+                    <P onclick="location.href='https://www.indiatoday.in/trending'">TRENDING</P>
+                    <P onclick="location.href='https://www.indiatoday.in/videos'">VIDEOS</P>
+                    <P onclick="location.href='https://www.indiatoday.in/education'">EDUACTION</P>
+                    <P onclick="location.href='https://www.indiatoday.in/auto'">AUTO</P>
+                    <P onclick="location.href='https://www.indiatoday.in/cryptocurrency'">CRYPTOCURRENCY</P>
+                    <P onclick="location.href='https://www.indiatoday.in/cities'">CITIES</P>
+                    <P onclick="location.href='https://www.indiatoday.in/crime'">CRIME</P>
+                    <P onclick="location.href='https://www.indiatoday.in/lifestyle'">LIFESTYLE</P>
+                    <P onclick="location.href='https://www.indiatoday.in/binge-watch'">BINGE WATCH</P>
+                    <P onclick="location.href='https://www.indiatoday.in/television'">TELEVISION</P>
+                    <P onclick="location.href='https://www.indiatoday.in/interactive/'">INTERACTIVES</P>
+                    <P onclick="location.href='https://www.indiatoday.in/visualstories'">VISUAL STORIES</P>
+                    <P onclick="location.href='https://www.indiatoday.in/horoscopes'">HOROSCOPE</P>
+                    <P onclick="location.href='https://www.indiatoday.in/fact-check'">FACT CHECK</P>
+                    <P onclick="location.href='https://www.indiatoday.in/diu'">DIU</P>
+                    <P onclick="location.href='https://www.indiatoday.in/newsmo'">NEWSMO</P>
+                    <P onclick="location.href='https://www.indiatoday.in/shopping'">SHOPPING</P>
+                    <P onclick="location.href='https://play.indiatodaygaming.com/';">GAMING</P>
+                    <P onclick="location.href='https://www.indiatoday.in/india/story/dnpa-code-of-ethics-1733696-2020-10-21'">CODE OF ETHICS</P>
+                </div>
+        </div> 
         <div>
             <i class="fa-solid fa-bitcoin-sign"; onclick="location.href='https://www.indiatoday.in/interactive/cryptocurrency-price-in-india-bitcoin-ethereum-dogecoin-ripple-litecoin/';"></i> 
         </div>
         <div>
             <i class="fa-solid fa-tv"; onclick="location.href='https://www.indiatoday.in/livetv';"></i>
         </div>
-        <div>
-            <i class="fa-solid fa-share-nodes"></i>
+        <div class="dropdown1">
+            <i class="fa-solid fa-share-nodes" id="dropdownicon1"></i>
+            <div class="container1">
+                <i class="fa-brands fa-facebook-f" onclick="location.href='https://www.facebook.com/IndiaToday/';"></i>
+                <i class="fa-brands fa-twitter" onclick="location.href='https://twitter.com/indiatoday';"></i>
+                <i class="fa fa-rss" onclick="location.href='https://www.indiatoday.in/rss';"></i>
+            </div>
         </div>
         <div>
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -112,5 +140,6 @@
 </div>
 </body>
 </html>
+
 
            
