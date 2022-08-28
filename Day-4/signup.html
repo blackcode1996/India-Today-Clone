@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Today | Sign in</title>
+    <link rel="shortcut icon" href="https://www.indiatoday.in/sites/all/themes/itg/favicon.ico"
+        type="image/vnd.microsoft.icon">
+    <style>
+        body{
+            background: url(https://img.freepik.com/free-photo/pastel-blue-vignette-concrete-textured-background_53876-102637.jpg?w=1060&t=st=1660824381~exp=1660824981~hmac=1d90c8a7e4fead752ea9f309392a7e4bf916572d8d438a8d6211c23d908579e3);
+        }
+        #heading{
+            height: 50px;
+            width: 8%;
+            border: 0px solid red;
+            margin-left: 700px;
+            margin-top: 70px;
+        }
+        #main{
+            height: 450px;
+            width: 30%;
+            border: 0px solid red;
+            margin-left: 520px;
+            margin-top: 30px;
+            padding: 30px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: small;
+        }
+        #main>h2{
+            text-align: center;
+        }
+        #main>form>div{
+            height: 100px;
+            width: 95%;
+            border: 0px solid red;
+            color: black;
+        }
+            
+        #main>form>div>input{
+            height: 25px;
+            width: 90%;
+            border-radius: .375rem;
+            padding: .5rem .75rem;
+            width: 100%;
+            border-width: 1px;
+            border-color: rgba(209,213,219,var(--tw-border-opacity));
+            --tw-border-opacity: 1;
+        }
+        #last>button{
+            width: 105%;
+            height: 40px;
+            padding: 10px;
+            color: gray;
+            text-align: center;
+            border-radius: 10px;
+            border-color: black;
+            background-color: #a00606;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+        }
+        P{
+            text-align: center;
+        }
+        #lastp{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: larger;
+            margin-top: 20px;
+            color:  #a00606;
+        }
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <a href="Header.html"><img src="https://akm-img-a-in.tosshub.com/sites/all/themes/itg/logo.png?v=1.52"></a>
+    </div>
+    <div id="main">
+        <h2 style="color: #a00606;">SIGN IN</h2>
+        <form>
+            <div>
+                <label for="" style="color: black">Email</label><br/>
+                <input id="mail" type="text" placeholder="Enter email"/><br/>
+            </div>
+            <div>
+                <label for="" style="color: black;">Password</label><br />
+                <input id="password" type="password" placeholder="Enter Password">
+            </div>
+            <br/>
+            <br/>
+            <div id="last">
+                <button id="signin">Sign-in</button><br/>
+                <br/>
+                <button><img src="https://sso.masaischool.com/google.svg"> Continue with Google</button>
+            </div>
+            <p id="lastp">Don't have an account? Sign Up</p>
+       </form>
+    </div>
+    <P>© 2022 by India Today Privacy Policy & Terms and Conditions</P>
+
+</body>
+</html>
+<script>
+    document.querySelector("#signin").addEventListener("click",myfun);
+    let credential_array=JSON.parse(localStorage.getItem("CRED_given")) || [];
+
+    function myfun(eve){
+        eve.preventDefault()
+
+        let mailid=document.querySelector("#mail").value;
+        let password=document.querySelector("#password").value;
+
+        console.log(mailid);
+        if (mailid=="" || password==""){
+            alert("Please fill all the credentials to login-In")
+        }else{
+            let credientialsobj = {
+            mailid,
+            password,
+        };
+        credential_array.push(credientialsobj);
+
+        localStorage.setItem("CRED_given",JSON.stringify(credential_array));
+
+        window.location.href="login.html"
+
+        }
+        
+
+        
+
+        // let credientialsobj = {
+        //     mailid,
+        //     password,
+        // };
+        // credential_array.push(credientialsobj);
+
+        // localStorage.setItem("CRED_given",JSON.stringify(credential_array));
+
+
+        
+    }
+</script>
